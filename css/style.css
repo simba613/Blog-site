@@ -1,0 +1,296 @@
+html, body {
+    height: 100%;
+}
+
+body {
+}
+
+body > section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn-picr.primary {
+    background: #f0a529;
+    border-color: #f0a529;
+}
+
+.btn-picr {
+    width: 125px;
+    border: 2px solid rgba(190, 190, 190, 0.46);
+    border-radius: 30px;
+}
+
+.btn-picr:hover, .btn-picr:focus {
+    background: transparent !important;
+}
+
+.navbar-picr {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+}
+
+.navbar-picr .navbar-toggle {
+    display: block;
+}
+
+.navbar-picr .navbar-toggle .icon-bar {
+    background: white;
+}
+
+.navbar-picr #main-menu .nav li {
+    padding: 0 20px;
+}
+
+.navbar-picr #main-menu .nav li > a {
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-picr .navbar-header {
+    float: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-picr #main-menu .nav li {
+        padding: 0 10px;
+    }
+
+    .container-fluid > .navbar-collapse {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 0;
+    }
+
+    .navbar-picr .navbar-collapse.collapse {
+        display: none !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar-right {
+        float: right !important;
+    }
+
+    .navbar-nav > li {
+        float: left;
+    }
+
+    .navbar-picr .navbar-header {
+        float: left;
+    }
+
+    .navbar-picr .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-picr .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .navbar-picr .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+
+    }
+
+.collapse.in {
+    display: block !important;
+}
+
+.navbar-picr #main-menu .nav li > a:not(.btn):hover, .navbar-picr #main-menu .nav li > a:not(.btn):focus {
+    color: white;
+    background: transparent;
+    border-bottom: solid 2px rgba(190, 190, 190, 0.46);
+}
+
+.navbar-picr #main-menu .nav li > a:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+section#landing-slider {
+    height: 100%;
+    padding: 0;
+}
+
+#landing-slider .item {
+    height: 100%
+}
+
+#landing-slider .item.item-1 {
+    background: url(.././img/landing1.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#landing-slider .item .content {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#landing-slider .item .content * {
+    margin: 0;
+}
+
+#landing-slider .item .content h3 {
+    padding: 20px;
+    margin: 0;
+}
+
+section#profile .profile-details {
+    display: table;
+}
+
+section#profile .profile-details .description {
+    width: 47%;
+    display: table-cell;
+}
+
+section#profile .profile-details .description img {
+    width: 100%;
+}
+
+section#profile .profile-details .description .messages {
+    padding: 40px;
+}
+
+section#profile .profile-details .detail-video {
+    background: url(.././img/landing-profile-movie.png) no-repeat center center;
+    display: table-cell;
+    width: 53%;
+}
+
+section#process {
+    background-image: url(.././img/landing-process.png);
+    background-size: cover;
+    height: 100%;
+}
+
+section#process .content{
+    position: relative;
+    top: 50%;
+    color: white;
+    text-align: center;
+}
+
+section#track img {
+    width: 100%;
+}
+section#paid{
+    margin-left:200px;
+}
+section#paid .content{
+    width:100%;
+    display: table;
+    position:relative;
+}
+
+section#paid .content .description{
+    display: table-cell;
+    position:relative;
+    width:50%;
+}
+
+section#paid .content .description h2{
+    margin-top: 50%;
+}
+section#paid .content .snapshot{
+    width:50%;
+    display: table-cell;
+}
+section#paid .content .snapshot img{
+    width:100%;
+}
+
+.navbar-bottom{
+    height:250px;
+    background-color:#45433C;
+}
+
+.navbar-bottom .container > i{
+    font-size:18px;
+    color:white;
+    padding:15px;
+    float:right;
+}
+.navbar-bottom .footer1{
+    padding: 75px;
+    border-style:none none solid none;
+    border-width:thin;
+    border-color:grey;
+}
+
+.navbar-bottom .footer2{
+    background-color:#45433C;   
+}
+.navbar-bottom .container-fluid .navbar-collapse >ul >li > a{
+    color:white;
+    margin-left:40px;
+}
+
+.navbar-bottom .container-fluid .navbar-collapse >ul >li > a:hover{
+    border-style: none none solid none;
+    border-width:3px;
+    border-color:grey;
+}
+
+@media screen and (max-width: 768px) {
+    section#profile .profile-details {
+        display: block;
+    }
+
+    section#profile .profile-details .description, section#profile .profile-details .detail-video {
+        display: block;
+        width: 100%;
+    }
+
+    section#profile .profile-details .detail-video {
+        height: 500px;
+    }
+    
+    section#paid{
+        margin:0px;
+    }
+    section#paid .content{
+        margin:0px;
+    }
+    
+    section#paid .content .description{
+        display:block;
+        text-align:center;
+        width:100%;
+    }
+    
+    section#paid .content .snapshot{
+        display: block;
+        width:100%;
+    }
+}
