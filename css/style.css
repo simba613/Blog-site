@@ -43,11 +43,25 @@ body > section {
 .navbar-picr #main-menu .nav li {
     padding: 0 20px;
 }
+.navbar-picr #main-menu .nav li .btn{
+    color:white;
+    font-weight: bold;
+    transition:0.5s;
+}
+.navbar-picr #main-menu .nav li .btn:hover{
+    background-color: #f0ad4e;
+}
 
-.navbar-picr #main-menu .nav li > a {
+.navbar-picr #main-menu .nav li .btn-warning:hover{
+    background-color: transparent;
+}
+
+.navbar-picr #main-menu .nav li > .script {
     color: white;
     padding-left: 0;
     padding-right: 0;
+    transition: 0.3s;
+    border-bottom: solid 2px transparent;
 }
 
 .navbar-picr .navbar-header {
@@ -80,6 +94,11 @@ body > section {
         height: auto !important;
         padding-bottom: 0;
         overflow: visible !important;
+    }
+
+    .navbar-bottom .navbar-collapse
+    {
+        margin-top:50px;
     }
 }
 
@@ -118,10 +137,11 @@ body > section {
     display: block !important;
 }
 
-.navbar-picr #main-menu .nav li > a:not(.btn):hover, .navbar-picr #main-menu .nav li > a:not(.btn):focus {
+.navbar-picr #main-menu .nav li > .script:not(.btn):hover, .navbar-picr #main-menu .nav li > .script:not(.btn):focus {
     color: white;
     background: transparent;
     border-bottom: solid 2px rgba(190, 190, 190, 0.46);
+
 }
 
 .navbar-picr #main-menu .nav li > a:hover {
@@ -251,11 +271,18 @@ section#paid .content .snapshot img{
 .navbar-bottom .footer2{
     background-color:#45433C;   
 }
+.navbar-bottom .container-fluid{
+    background-color:#45433C;
+}
 .navbar-bottom .container-fluid .navbar-collapse >ul >li > a{
     color:white;
     margin-left:40px;
 }
-
+.navbar-bottom .container-fluid .navbar-collapse >ul >li > a{
+    border-style: none none solid none;
+    border-width:3px;
+    border-color:#45433C;
+}
 .navbar-bottom .container-fluid .navbar-collapse >ul >li > a:hover{
     border-style: none none solid none;
     border-width:3px;
@@ -293,4 +320,23 @@ section#paid .content .snapshot img{
         display: block;
         width:100%;
     }
+}
+
+#track .row .btn-warning{
+    padding: 15px 40px 15px 40px;
+    border-radius: 25.2px;
+}
+
+#track .row .btn-default{
+    padding: 15px 40px 15px 40px;
+    border-radius: 25.2px;
+    margin-left:15px;
+    color:black;
+    font-weight: bold;
+}
+
+#paid .content .description button{
+    padding: 15px 40px 15px 40px;
+    border-radius: 25.2px;
+    font-weight: bold;   
 }
